@@ -5,8 +5,6 @@ import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 @Builder(toBuilder = true)
-@AllArgsConstructor
-@NoArgsConstructor
 public class Response {
     private Object messageBody;
     private int codeMessage;

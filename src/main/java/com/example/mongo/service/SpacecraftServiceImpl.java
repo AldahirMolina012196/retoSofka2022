@@ -68,7 +68,7 @@ public class SpacecraftServiceImpl implements SpacecraftService, Objects {
         if (spacecraftRepository.existsById(spacecraft.getId()) && ship != null) {
             return createResponseSuccess(spacecraftRepository.save(ship));
         } else {
-            return createResponseFailed("La nave que desea actualizar no existe\n o no cumple con las validaciones del tipo de nave");
+            return createResponseFailed("La nave que desea actualizar no existe o no cumple con las validaciones del tipo de nave");
         }
     }
 

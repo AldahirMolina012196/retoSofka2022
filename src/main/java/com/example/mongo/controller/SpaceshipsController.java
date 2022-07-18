@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequiredArgsConstructor
@@ -39,7 +40,7 @@ public class SpaceshipsController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public Response deleteSpacecraft(@PathVariable(value = "id")String id){
+    public Response deleteSpacecraft(@PathVariable(value = "id") String id) {
         return spacecraftService.delete(id);
     }
 }
